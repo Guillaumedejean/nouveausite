@@ -1,0 +1,219 @@
+                            @import url(reset.css);
+                             :root {
+                                --text-dark: #0d0e0e;
+                            }
+                            
+                            html {
+                                font-size: 62.5%;
+                                font-family: 'roboto', sans-serif;
+                            }
+                            
+                            ul {
+                                list-style: none;
+                            }
+                            
+                            a {
+                                text-decoration: none;
+                            }
+                            /* .blocblanc {
+            height: 7rem;
+            background-color: white;
+        } */
+                            
+                            header {
+                                background-color: rgba(255, 255, 255, 0);
+                                box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                position: sticky;
+                                top: 0;
+                            }
+                            
+                            nav.container {
+                                max-width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                flex-wrap: wrap;
+                            }
+                            
+                            .main-menu {
+                                display: flex;
+                                overflow: hidden;
+                            }
+                            
+                            .main-menu li:hover {
+                                background-color: #e4e4e4;
+                            }
+                            
+                            .main-menu a {
+                                display: block;
+                                line-height: 7rem;
+                                font-size: 1.8rem;
+                                font-weight: 500;
+                                padding: 0 2rem;
+                                text-transform: capitalize;
+                            }
+                            
+                            .main-menu li:nth-child(-1n+3) a {
+                                color: #1C498B;
+                            }
+                            
+                            .main-menu li:nth-child(4) a {
+                                color: #FFB100;
+                            }
+                            
+                            .main-menu li:nth-child(5) a {
+                                color: #5FB0B7;
+                                margin-right: 10rem;
+                            }
+                            
+                            .menu-btn,
+                            .menu-icon {
+                                display: none;
+                            }
+                            
+                            .menu-icon i {
+                                display: block;
+                                width: 2.5rem;
+                                height: 2px;
+                                background-color: #1C498B;
+                                transition: transform .2s ease;
+                            }
+                            
+                            .menu-icon i+i {
+                                margin-top: 6px;
+                            }
+                            
+                            .menu-btn:checked~.main-menu {
+                                height: 100vh;
+                                height: calc(60vh - 7rem);
+                                opacity: 1;
+                                justify-content: space-evenly;
+                            }
+                            
+                            .menu-btn:checked+.menu-icon i:nth-child(1) {
+                                transform: translateY(8px) rotate(45deg);
+                            }
+                            
+                            .menu-btn:checked+.menu-icon i:nth-child(2) {
+                                opacity: 0;
+                            }
+                            
+                            .menu-btn:checked+.menu-icon i:nth-child(3) {
+                                transform: translateY(-8px) rotate(-45deg);
+                            }
+                            
+                            #home {
+                                display: flex;
+                                flex-direction: column;
+                                height: 100vh;
+                            }
+                            
+                            #mainhome {
+                                height: calc(100vh - 7rem);
+                                display: flex;
+                                background-color: #E4E4E4;
+                            }
+                            
+                            #homeleftpart,
+                            #homerightpart {
+                                display: flex;
+                                flex: 1 1 50%;
+                                height: 100%;
+                                flex-direction: column;
+                            }
+                            
+                            #photo {
+                                background-image: url('../css/img/Groupe\ de\ masques\ 1.png');
+                                background-position: left;
+                                background-size: cover;
+                            }
+                            
+                            #photo,
+                            #yellow {
+                                display: flex;
+                                flex: 1 1 50%;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            #yellow {
+                                background-color: #FFB100;
+                                padding: 0 4rem;
+                            }
+                            
+                            #yellow p {
+                                font-weight: bold;
+                                font-size: 138px;
+                                color: #fff;
+                                text-align: center;
+                            }
+                            
+                            #tete_engrenages,
+                            #textright {
+                                display: flex;
+                                flex: 1 1 50%;
+                            }
+                            
+                            #textright {
+                                flex-direction: column;
+                                justify-content: center;
+                            }
+                            
+                            #textright h1 {
+                                font-weight: bold;
+                                font-size: 49px;
+                                color: #4b4747;
+                            }
+                            
+                            #textright h1 span:nth-child(1) {
+                                display: inline-block;
+                                background-color: #FFB100;
+                                line-height: 55px;
+                            }
+                            
+                            #textright h1 span:nth-child(2) {
+                                color: #1C498B;
+                            }
+                            
+                            #textright p {
+                                display: inline-block;
+                                font-weight: normal;
+                                font-size: 30px;
+                                text-align: left;
+                                color: #4b4747;
+                                padding: 0 20rem 0 0;
+                            }
+                            
+                            #tete_engrenages {
+                                justify-content: end;
+                                align-items: flex-end;
+                                position: relative;
+                            }
+                            
+                            #tete_engrenages img:nth-child(1) {
+                                height: 50rem;
+                            }
+                            
+                            #tete_engrenages img:nth-child(2) {
+                                position: absolute;
+                                top: 18rem;
+                                right: 26rem;
+                                animation: rotation 6s linear infinite reverse;
+                            }
+                            
+                            #tete_engrenages img:nth-child(3) {
+                                position: absolute;
+                                top: 8rem;
+                                right: 15.5rem;
+                                animation: rotation 6s linear infinite;
+                            }
+                            
+                            @keyframes rotation {
+                                0% {}
+                                100% {
+                                    transform: rotate(360deg);
+                                }
+                            }

@@ -19,11 +19,11 @@
                                         
                                         section {
                                             position: relative;
-                                            
+                                            width: 100%;
                                         }
                                         
                                         body {
-                                            
+                                            width: 100%;
                                         }
                                         
                                         header {
@@ -32,7 +32,7 @@
                                             display: flex;
                                             justify-content: space-between;
                                             align-items: center;
-                                            position: fixed;
+                                            position: sticky;
                                             width: 100%;
                                             top: 0;
                                             z-index: 9999;
@@ -40,7 +40,7 @@
                                         /* menu burger responsive---------------------------------------------------------- */
                                         
                                         nav.container {
-                                            max-width: 100%;
+                                            /* max-width: 100%; */
                                             display: flex;
                                             justify-content: space-between;
                                             align-items: center;

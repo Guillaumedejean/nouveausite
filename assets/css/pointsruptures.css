@@ -1,60 +1,77 @@
-@media (max-width: 1150px) {
-    #mainhome {
-        flex-direction: column;
-    }
-    #textright h1,
-    #textright p {
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-}
-
-@media (max-width: 899px) {
-    header {
-        align-items: stretch;
-        padding: 0;
-    }
-    nav.container {
-        justify-content: center;
-        margin-right: 40%;
-    }
-    .menu-icon {
-        margin-top: 3rem;
-        cursor: pointer;
-        display: inline-block;
-    }
-    .main-menu {
-        flex: 1 1 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        height: 0;
-        opacity: 0;
-        transition: all .4s ease-in-out;
-    }
-    .main-menu li {
-        width: 100%;
-        text-align: center;
-    }
-    .main-menu li:nth-child(5) a {
-        color: #5FB0B7;
-        margin-right: 0rem;
-    }
-}
-
-@media (max-width: 499px) {
-    nav.container {
-        justify-content: center;
-        margin-right: 5%;
-    }
-    .menu-btn:checked~.main-menu {
-        height: 100vh;
-        height: calc(90vh - 7rem);
-        opacity: 1;
-        justify-content: space-evenly;
-    }
-    .main-menu li:nth-child(5) a {
-        color: #5FB0B7;
-        margin-right: 0rem;
-    }
-}
+            @media (max-width: 1150px) {
+                #mainhome {
+                    flex-direction: column;
+                }
+                #textright h1,
+                #textright p {
+                    text-align: center;
+                    padding: 2rem 0;
+                    margin: 0;
+                }
+                #tete_engrenages img:nth-child(1) {
+                    height: 70%;
+                }
+                #greenright p,
+                #blueleft p {
+                    font-size: 20px;
+                }
+                #cvpage {
+                    flex-direction: column-reverse;
+                }
+                #cvpage h1 {
+                    text-align: center;
+                    padding-top: 7rem;
+                }
+            }
+            
+            @media (max-width: 899px) {
+                header {
+                    align-items: stretch;
+                    padding: 0;
+                }
+                nav.container {
+                    justify-content: center;
+                    margin-right: 40%;
+                }
+                .menu-icon {
+                    margin-top: 3rem;
+                    cursor: pointer;
+                    display: inline-block;
+                }
+                .main-menu {
+                    flex: 1 1 100%;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    height: 0;
+                    opacity: 0;
+                    transition: all .4s ease-in-out;
+                }
+                .main-menu li {
+                    width: 100%;
+                    text-align: center;
+                }
+                .main-menu li:nth-child(5) a {
+                    color: #5FB0B7;
+                    margin-right: 0rem;
+                }
+                #textsabout {
+                    flex-direction: column;
+                }
+            }
+            
+            @media (max-width: 499px) {
+                nav.container {
+                    justify-content: center;
+                    margin-right: 5%;
+                }
+                .menu-btn:checked~.main-menu {
+                    height: 100vh;
+                    height: calc(90vh - 7rem);
+                    opacity: 1;
+                    justify-content: space-evenly;
+                }
+                .main-menu li:nth-child(5) a {
+                    color: #5FB0B7;
+                    margin-right: 0rem;
+                }
+            }

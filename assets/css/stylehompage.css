@@ -1,219 +1,146 @@
-                            @import url(reset.css);
-                             :root {
-                                --text-dark: #0d0e0e;
-                            }
-                            
-                            html {
-                                font-size: 62.5%;
-                                font-family: 'roboto', sans-serif;
-                            }
-                            
-                            ul {
-                                list-style: none;
-                            }
-                            
-                            a {
-                                text-decoration: none;
-                            }
-                            /* .blocblanc {
-            height: 7rem;
-            background-color: white;
-        } */
-                            
-                            header {
-                                background-color: rgba(255, 255, 255, 0);
-                                box-shadow: 1px 1px 4px rgba(0, 0, 0, .1);
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                position: sticky;
-                                top: 0;
-                            }
-                            
-                            nav.container {
-                                max-width: 100%;
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                flex-wrap: wrap;
-                            }
-                            
-                            .main-menu {
-                                display: flex;
-                                overflow: hidden;
-                            }
-                            
-                            .main-menu li:hover {
-                                background-color: #e4e4e4;
-                            }
-                            
-                            .main-menu a {
-                                display: block;
-                                line-height: 7rem;
-                                font-size: 1.8rem;
-                                font-weight: 500;
-                                padding: 0 2rem;
-                                text-transform: capitalize;
-                            }
-                            
-                            .main-menu li:nth-child(-1n+3) a {
-                                color: #1C498B;
-                            }
-                            
-                            .main-menu li:nth-child(4) a {
-                                color: #FFB100;
-                            }
-                            
-                            .main-menu li:nth-child(5) a {
-                                color: #5FB0B7;
-                                margin-right: 10rem;
-                            }
-                            
-                            .menu-btn,
-                            .menu-icon {
-                                display: none;
-                            }
-                            
-                            .menu-icon i {
-                                display: block;
-                                width: 2.5rem;
-                                height: 2px;
-                                background-color: #1C498B;
-                                transition: transform .2s ease;
-                            }
-                            
-                            .menu-icon i+i {
-                                margin-top: 6px;
-                            }
-                            
-                            .menu-btn:checked~.main-menu {
-                                height: 100vh;
-                                height: calc(60vh - 7rem);
-                                opacity: 1;
-                                justify-content: space-evenly;
-                            }
-                            
-                            .menu-btn:checked+.menu-icon i:nth-child(1) {
-                                transform: translateY(8px) rotate(45deg);
-                            }
-                            
-                            .menu-btn:checked+.menu-icon i:nth-child(2) {
-                                opacity: 0;
-                            }
-                            
-                            .menu-btn:checked+.menu-icon i:nth-child(3) {
-                                transform: translateY(-8px) rotate(-45deg);
-                            }
-                            
-                            #home {
-                                display: flex;
-                                flex-direction: column;
-                                height: 100vh;
-                            }
-                            
-                            #mainhome {
-                                height: calc(100vh - 7rem);
-                                display: flex;
-                                background-color: #E4E4E4;
-                            }
-                            
-                            #homeleftpart,
-                            #homerightpart {
-                                display: flex;
-                                flex: 1 1 50%;
-                                height: 100%;
-                                flex-direction: column;
-                            }
-                            
-                            #photo {
-                                background-image: url('../css/img/Groupe\ de\ masques\ 1.png');
-                                background-position: left;
-                                background-size: cover;
-                            }
-                            
-                            #photo,
-                            #yellow {
-                                display: flex;
-                                flex: 1 1 50%;
-                                justify-content: center;
-                                align-items: center;
-                            }
-                            
-                            #yellow {
-                                background-color: #FFB100;
-                                padding: 0 4rem;
-                            }
-                            
-                            #yellow p {
-                                font-weight: bold;
-                                font-size: 138px;
-                                color: #fff;
-                                text-align: center;
-                            }
-                            
-                            #tete_engrenages,
-                            #textright {
-                                display: flex;
-                                flex: 1 1 50%;
-                            }
-                            
-                            #textright {
-                                flex-direction: column;
-                                justify-content: center;
-                            }
-                            
-                            #textright h1 {
-                                font-weight: bold;
-                                font-size: 49px;
-                                color: #4b4747;
-                            }
-                            
-                            #textright h1 span:nth-child(1) {
-                                display: inline-block;
-                                background-color: #FFB100;
-                                line-height: 55px;
-                            }
-                            
-                            #textright h1 span:nth-child(2) {
-                                color: #1C498B;
-                            }
-                            
-                            #textright p {
-                                display: inline-block;
-                                font-weight: normal;
-                                font-size: 30px;
-                                text-align: left;
-                                color: #4b4747;
-                                padding: 0 20rem 0 0;
-                            }
-                            
-                            #tete_engrenages {
-                                justify-content: end;
-                                align-items: flex-end;
-                                position: relative;
-                            }
-                            
-                            #tete_engrenages img:nth-child(1) {
-                                height: 50rem;
-                            }
-                            
-                            #tete_engrenages img:nth-child(2) {
-                                position: absolute;
-                                top: 18rem;
-                                right: 26rem;
-                                animation: rotation 6s linear infinite reverse;
-                            }
-                            
-                            #tete_engrenages img:nth-child(3) {
-                                position: absolute;
-                                top: 8rem;
-                                right: 15.5rem;
-                                animation: rotation 6s linear infinite;
-                            }
-                            
-                            @keyframes rotation {
-                                0% {}
-                                100% {
-                                    transform: rotate(360deg);
-                                }
-                            }
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="./assets/css/stylehompage.css">
+    <link rel="stylesheet" href="./assets/css/pointsruptures.css">
+</head>
+
+<body>
+    <section id="home">
+
+        <header>
+            <!-- <div class="wrapper"> -->
+            <svg id="LOGO" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="191" height="70" viewBox="0 0 191 70">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_82" data-name="Rectangle 82" width="191" height="70" transform="translate(-8580 -3106)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_de_masques_6" data-name="Groupe de masques 6" transform="translate(8580 3106)" clip-path="url(#clip-path)">
+    <g id="Logo" transform="translate(-8580 -3110)">
+      <g id="Groupe_55" data-name="Groupe 55" transform="translate(-2 -4)">
+        <rect id="Rectangle_8" data-name="Rectangle 8" width="148" height="70" transform="translate(2 8)" fill="#ffb100"/>
+        <text id="GD" transform="translate(98 4)" fill="#fff" font-size="70" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="67">G</tspan><tspan y="67" fill="#1c498b">D</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
+            <nav class="container">
+
+
+
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <label for="menu-btn" class="menu-icon">
+        <i></i>
+        <i></i>
+        <i></i>
+      </label>
+
+                <ul class="main-menu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contactpage">contact</a></li>
+                    <li><a href="">look</a></li>
+                    <li><a href="">listen</a></li>
+                </ul>
+
+
+            </nav>
+
+        </header>
+        <section id="mainhome">
+
+            <div id="homeleftpart">
+                <!-- HOME LEFT PART -->
+
+                <div id="photo">
+                    <!-- HOME LEFT PART PHOTO -->
+
+
+                </div>
+
+                <div id="yellow">
+                    <!-- HOME LEFT PART YELLOW BLOCK -->
+                    <p>JUNIOR UI UX DESIGN</p>
+                </div>
+            </div>
+            <!-- HOME right PART -->
+            <div id="homerightpart">
+                <div id="textright">
+                    <h1>Hi i'm <span>G</span>uillaume <span>D</span>ejean</h1>
+                    <p>I'm a student in UI UX design with a background in ergonomics and mobility solutions currently living in Montpellier.</p>
+                </div>
+                <div id="tete_engrenages">
+                    <img src="./assets/css/img/tete page daccueil.png" alt="">
+                    <img src="./assets/css/img/Tracé 38.png" alt="">
+                    <img src="./assets/css/img/Tracé 41.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="about">
+            <div id="titresabout">
+                <div>
+                    <p>About</p>
+                </div>
+                <div>
+                    <p>Me</p>
+                </div>
+            </div>
+            <div id="textsabout">
+                <div id="greenright">
+                    <h2>The <span>P</span>ast</h2>
+                    <p>For the past 13 years, i've been supplying mobility solutions and everyday technical aids for people with physical disabilities. This activity witch is very close to a Occupational therapist, allowed me to get a strong sense of understanding
+                        of users needs. I learned to listen and target constraints and to establish spécifications. Beside this job i've always been attracted by art, especially in design of any kind and music. </p>
+                </div>
+                <div id="blueleft">
+                    <h2>The <span>F</span>uture</h2>
+                    <p>This year i redirect my career towards UX and UI design. These two disciplines combine parts of my background with finding to improve the user experience, be aware of the users needs, with the aesthetic reach in UI. During this formation
+                        i found my self a taste for coding that i didn't expect. In effect i like the rigor of the code and as well the magic that works when the code is revealed on a web page. My goal is, at the term of my formation to integrate a communication
+                        agency or a company where i can improve my skills and become a true UX UI professional.</p>
+
+                    <a href="#cvpage">CV <span>pdf</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="cvpage">
+            <div id="cv">
+                <a href=""><img src="./assets/css/img/CV.png" alt=""></a>
+            </div>
+            <div>
+                <h1>Hi i'm <span>G</span>uillaume <span>D</span>ejean</h1>
+            </div>
+        </section>
+        <section id="contactpage">
+            <div id="leftcontact">
+                <h3>GET IN TOUCH </h3>
+                <div id="formulaire">
+                    <div class="form">
+                        <input type="email" name="email" id="email">
+                        <label for="email">email</label>
+                        <span></span>
+                    </div>
+                    <div>
+                        <textarea name="" id="" cols="30" rows="10">message</textarea>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+    </section>
+</body>
+
+</html>
